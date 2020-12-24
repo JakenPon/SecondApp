@@ -5,39 +5,39 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="10dp"
-    tools:context=".Register">
+    tools:context=".presentation.main.Register">
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/login_input_layout"
+        android:id="@+id/register_login_input_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Login"
-        app:layout_constraintBottom_toTopOf="@id/password_input_layout"
+        app:layout_constraintBottom_toTopOf="@id/register_password_input_layout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_chainStyle="packed">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/login_edit"
+            android:id="@+id/register_login_edit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="text" />
     </com.google.android.material.textfield.TextInputLayout>
 
 <com.google.android.material.textfield.TextInputLayout
-    android:id="@+id/password_input_layout"
+    android:id="@+id/register_password_input_layout"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:hint="Password"
     android:layout_marginTop="10dp"
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toBottomOf="@+id/login_input_layout"
-    app:layout_constraintBottom_toTopOf="@+id/login_button">        >
+    app:layout_constraintTop_toBottomOf="@+id/register_login_input_layout"
+    app:layout_constraintBottom_toTopOf="@+id/register_login_button">        >
 
     <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/password_edit"
+        android:id="@+id/register_password_edit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textPassword"
@@ -45,7 +45,7 @@
 </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/login_button"
+        android:id="@+id/register_login_button"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="90dp"
@@ -56,7 +56,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/password_input_layout"
+        app:layout_constraintTop_toBottomOf="@+id/register_password_input_layout"
         app:rippleColor="#673AB7" />
 
     <TextView
@@ -67,7 +67,7 @@
         android:textColor="#C90C0505"
         android:textSize="30sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/login_input_layout"
+        app:layout_constraintBottom_toTopOf="@+id/register_login_input_layout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
