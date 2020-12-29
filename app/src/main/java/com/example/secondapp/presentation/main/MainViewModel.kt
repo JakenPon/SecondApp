@@ -32,4 +32,10 @@ class MainViewModel(
         }
 
     }
+
+    fun OnClickedRegister(emailUser: String) {
+        viewModelScope.launch(Dispatchers.IO) {
+            createUserUseCase.invoke(User(emailUser))
+        }
+    }
 }
