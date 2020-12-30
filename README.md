@@ -31,7 +31,7 @@ https://restcountries.eu/
 - Bouton de Connexion
 - Bouton de Création de Compte
 
-<img src="img_readme/login.PNG">   <img src="img_readme/login_error.PNG" alt="Erreur car le champ login est vide"> <img src="img_readme/login_error_2.png" alt="Erreur car le compte est inconnu">
+<img src="img_readme/login.PNG">   <img src="img_readme/login_error.PNG" alt="Erreur car le champ login est vide"> <img src="img_readme/login_error_2.PNG" alt="Erreur car le compte est inconnu">
 
 ### Ecran de Register
 - Case pour mettre son Login
@@ -45,7 +45,7 @@ https://restcountries.eu/
 	- Sa capitale
 	- Son drapeau
 
-<img src="img_readme/liste.png" alt="liste des Pays avec leurs capitales">  
+<img src="img_readme/liste.PNG" alt="liste des Pays avec leurs capitales">  
 
 ## Etapes de Développement :
 ### 1.Choix de l'API
