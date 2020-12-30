@@ -31,7 +31,13 @@ https://restcountries.eu/
 - Bouton de Connexion
 - Bouton de Création de Compte
 
-<img src="img_readme/liste.png">   <img src="img_readme/Recherche_rick.png" alt="fonctionnalité recherche"> <img src="img_readme/Recherche_morty.png" alt="fonctionnalité recherche">
+<img src="img_readme/login.PNG">   <img src="img_readme/login_error.PNG" alt="Erreur car le champ login est vide"> <img src="img_readme/login_error_2.png" alt="Erreur car le compte est inconnu">
+
+### Ecran de Register
+- Case pour mettre son Login
+- Bouton pour enregistrer le compte dans la Base de donnée
+
+<img src="img_readme/register.PNG">   <img src="img_readme/register_error.PNG" alt="Erreur car le champ login est vide"> 
 
 ### Ecran de Liste 
 - Affiche la liste des pays :
@@ -39,8 +45,7 @@ https://restcountries.eu/
 	- Sa capitale
 	- Son drapeau
 
-<img src="img_readme/Rick.png" alt="détail perso 1">   <img src="img_readme/Rick2.png" alt="détail perso 2">  <img src="img_readme/Rick3.png" alt ="detail perso 3">
-
+<img src="img_readme/liste.png" alt="liste des Pays avec leurs capitales">  
 
 ## Etapes de Développement :
 ### 1.Choix de l'API
