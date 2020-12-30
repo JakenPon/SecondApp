@@ -12,16 +12,17 @@ https://restcountries.eu/
 ````
 
 ## Consignes respectés :
-	- Code en Kotlin 
-	- Architecture MVVM
-	- Clean Architecture
-	- Utilisation d’une réelle BDD
-	- Utilisation Api REST
-	- Affichage d’une RecyclerView
-	- Design
-	- Fonctionnalités supplémentaire :
-	  - Page de Login et Register
-	  - Image application
+
+- Code en Kotlin 
+- Architecture MVVM
+- Clean Architecture
+- Utilisation d’une réelle BDD
+- Utilisation Api REST
+- Affichage d’une RecyclerView
+- Design
+- Fonctionnalités supplémentaire :
+	- Page de Login et Register
+	- Image application
 
 
 ## Fonctionnalités :
