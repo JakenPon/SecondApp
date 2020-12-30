@@ -44,7 +44,7 @@ https://restcountries.eu/
 	- Nom du Pays
 	- Sa capitale
 	- Son drapeau (problème d'implémentation suite au format de données dans l'API)
-
+ 
 <img src="img_readme/liste.PNG" alt="liste des Pays avec leurs capitales">  
 
 ## Etapes de Développement :
