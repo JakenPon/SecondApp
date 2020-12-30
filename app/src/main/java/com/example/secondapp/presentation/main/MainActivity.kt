@@ -18,8 +18,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val intent = Intent(this,List_view::class.java)
-        startActivity(intent) /*
 
         mainViewModel.loginLiveData.observe(this, Observer {
             when(it){
@@ -36,13 +34,13 @@ class MainActivity : AppCompatActivity() {
                         .show()
                 }
             }
-        }) */
+        })
 
         login_button.setOnClickListener {
-            if(login_edit.text.toString().trim().isNotEmpty() || password_edit.text.toString().trim().isNotEmpty() ){
-                mainViewModel.onClickedLogin(login_edit.text.toString().trim(), password_edit.text.toString())
+            if(login_edit.text.toString().trim().isNotEmpty() ){
+                mainViewModel.onClickedLogin(login_edit.text.toString().trim())
             }else {
-                Toast.makeText(this, "Login et Password manquants", Toast.LENGTH_LONG).show()
+                Toast.makeText(this, "Login manquant", Toast.LENGTH_LONG).show()
             }
 
         }

@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Login"
-        app:layout_constraintBottom_toTopOf="@id/register_password_input_layout"
+        app:layout_constraintBottom_toTopOf="@id/register_login_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -25,24 +25,7 @@
             android:inputType="text" />
     </com.google.android.material.textfield.TextInputLayout>
 
-<com.google.android.material.textfield.TextInputLayout
-    android:id="@+id/register_password_input_layout"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:hint="Password"
-    android:layout_marginTop="10dp"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toBottomOf="@+id/register_login_input_layout"
-    app:layout_constraintBottom_toTopOf="@+id/register_login_button">        >
 
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/register_password_edit"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="textPassword"
-        />
-</com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/register_login_button"
@@ -56,7 +39,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/register_password_input_layout"
+        app:layout_constraintTop_toBottomOf="@+id/register_login_input_layout"
         app:rippleColor="#673AB7" />
 
     <TextView

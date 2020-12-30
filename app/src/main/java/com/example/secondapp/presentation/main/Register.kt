@@ -15,12 +15,12 @@ class Register : AppCompatActivity() {
         setContentView(R.layout.activity_register)
 
         register_login_button.setOnClickListener {
-        if(register_login_edit.text.toString().trim().isNotEmpty() || register_password_edit.text.toString().trim().isNotEmpty() ){
-            Toast.makeText(this, "Login et Password OK", Toast.LENGTH_LONG).show()
+        if(register_login_edit.text.toString().trim().isNotEmpty() ){
+            Toast.makeText(this, "Login OK", Toast.LENGTH_LONG).show()
             mainViewModel.OnClickedRegister(register_login_edit.text.toString().trim())
-           // handler.insert(user = register_login_edit.text.toString().trim())
+
         }else {
-            Toast.makeText(this, "Login et Password manquants", Toast.LENGTH_LONG).show()
+            Toast.makeText(this, "Login manquant", Toast.LENGTH_LONG).show()
         }
         }
     }
