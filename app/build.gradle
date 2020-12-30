@@ -3,6 +3,7 @@ apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 apply plugin: 'kotlin-kapt'
 
+
 android {
     compileSdkVersion 29
     buildToolsVersion "29.0.3"
@@ -65,6 +66,18 @@ dependencies {
 
     //CARDVIEW
     implementation "androidx.cardview:cardview:1.0.0"
+
+    //PICASSO
+    implementation 'com.squareup.picasso:picasso:2.71828'
+
+    //GLIDE
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+   // annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+    kapt 'com.github.bumptech.glide:compiler:4.11.0'
+  //  implementation 'com.github.corouteam:GlideToVectorYou:v2.0.0'
+
+    //SVG LOADER
+   // implementation 'com.github.ar-android:AndroidSvgLoader:1.0.2'
 
 
     testImplementation 'junit:junit:4.12'

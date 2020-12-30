@@ -1,38 +1,70 @@
 package com.example.secondapp.data.repository
-
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.annotation.GlideModule
+import com.bumptech.glide.module.AppGlideModule
 import com.example.secondapp.R
-import com.example.secondapp.data.repository.response.Characters
-import com.example.secondapp.data.repository.response.Result
+import com.example.secondapp.data.repository.response.CountriesItem
 import kotlinx.android.synthetic.main.item.view.*
 
-class Adapter(private val itemList: List<Result> ) : RecyclerView.Adapter<Adapter.ViewHolder>() {
 
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        val itemView = LayoutInflater.from(parent.context).inflate(R.layout.item,
-            parent, false)
-         return ViewHolder(itemView)
+
+
+@GlideModule
+class AppGlideModule : AppGlideModule()
+
+class Adapter : RecyclerView.Adapter<Adapter.MyViewHolder>() {
+
+    var items = ArrayList<CountriesItem>()
+
+
+    fun setListData(data: List<CountriesItem>) {
+        var newValue = ArrayList<CountriesItem>()
+        for(e in data){
+            newValue.add(e)
+        }
+        this.items = newValue
     }
 
-    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        val currentItem = itemList[position]
-
-        holder.imageView.setImageResource(currentItem.image.toInt())
-        holder.textView1.text = currentItem.name
-        holder.textView2.text = currentItem.location.toString()
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
+        val itemView = LayoutInflater.from(parent.context).inflate(R.layout.item, parent, false)
+        return MyViewHolder(itemView)
     }
 
-    override fun getItemCount() = itemList.size
+    override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
+        holder.bind(items[position])
+        val currentItem = items[position]
 
-    class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
-        val imageView: ImageView = itemView.imageView
-        val textView1: TextView = itemView.text_view_1
-        val textView2: TextView = itemView.text_view_2
+    }
+
+    override fun getItemCount(): Int{
+        return items.size
+    }
+
+    class MyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
+        val imageDrapeau =  itemView.imageDrapeau
+        private val textView1: TextView = itemView.text_view_1
+        private val textView2: TextView = itemView.text_view_2
+
+        fun bind(data: CountriesItem){
+            textView1.text = data.name
+            textView2.text = data.capital
+
+        val url = data.flag
+
+           GlideApp.with(itemView.context)
+                .load(url)
+                .into(imageDrapeau)
+
+
+
+
+
+        }
     }
 }

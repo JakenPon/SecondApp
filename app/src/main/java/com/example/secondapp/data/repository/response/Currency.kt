@@ -1,6 +1,7 @@
 package com.example.secondapp.data.repository.response
 
-data class Origin(
+data class Currency(
+    val code: String,
     val name: String,
-    val url: String
+    val symbol: String
 )

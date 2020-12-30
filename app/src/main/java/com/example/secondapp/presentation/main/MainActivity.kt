@@ -8,7 +8,6 @@ import androidx.lifecycle.Observer
 import com.example.secondapp.R
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.activity_register.*
 import org.koin.android.ext.android.inject
 
 class MainActivity : AppCompatActivity() {
@@ -18,6 +17,9 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        val intent = Intent(this,List_view::class.java)
+        startActivity(intent) /*
 
         mainViewModel.loginLiveData.observe(this, Observer {
             when(it){
@@ -34,7 +36,8 @@ class MainActivity : AppCompatActivity() {
                         .show()
                 }
             }
-        })
+        }) */
+
         login_button.setOnClickListener {
             if(login_edit.text.toString().trim().isNotEmpty() || password_edit.text.toString().trim().isNotEmpty() ){
                 mainViewModel.onClickedLogin(login_edit.text.toString().trim(), password_edit.text.toString())
@@ -43,9 +46,12 @@ class MainActivity : AppCompatActivity() {
             }
 
         }
+
         create_account_button.setOnClickListener{
             val intent = Intent(this, Register::class.java)
             startActivity(intent)
         }
     }
+
+
 }
