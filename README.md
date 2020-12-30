@@ -43,7 +43,7 @@ https://restcountries.eu/
 - Affiche la liste des pays :
 	- Nom du Pays
 	- Sa capitale
-	- Son drapeau
+	- Son drapeau (problème d'implémentation suite au format dans l'API)
 
 <img src="img_readme/liste.PNG" alt="liste des Pays avec leurs capitales">  
 
@@ -53,7 +53,7 @@ Après avoir voulu utiliser l'API de la série "Rick & Morty", j'ai finalement d
 sur les Pays du monde.
 
 ### 2.Choix de la Fonctionnalité
-J'ai choisi d'implémenter une fonctionnalité de login, mais comme il s'agit d'une application personnelle,
+Implémentation d'une fonctionnalité de login, mais comme il s'agit d'une application personnelle,
 il n'y a pas de mot de passe nécessaire.
 
 ### 3.Architecture 
@@ -63,7 +63,7 @@ Ajout de la structure MVVM et de la clean architecture, qui permettent de struct
 Utilisation de Retrofit et création de l'Adapter pour que l'application fonctionne avec la recyclerview
 
 ### 5.Ajout RecyclerView et Layout
-Ajout de la RecyclerView et des Layout des views afin d'afficher les données récupérés grace à l'api
+Ajout de la RecyclerView et des Layout des views afin d'afficher les données récupérés grâce à l'API
 
 
 
