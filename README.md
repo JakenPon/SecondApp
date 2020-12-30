@@ -43,7 +43,7 @@ https://restcountries.eu/
 - Affiche la liste des pays :
 	- Nom du Pays
 	- Sa capitale
-	- Son drapeau (problème d'implémentation suite au format dans l'API)
+	- Son drapeau (problème d'implémentation suite au format de données dans l'API)
 
 <img src="img_readme/liste.PNG" alt="liste des Pays avec leurs capitales">  
 
