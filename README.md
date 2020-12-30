@@ -6,7 +6,7 @@ World Countries App
 ## Présentation
 
 Projet d'application mobile codée en Kotlin.
-Elle affiche la liste des payes du monde, ainsi que leurs capitales à partir de l'api :
+Elle affiche la liste des pays du monde, ainsi que leurs capitales à partir de l'API :
 ````
 https://restcountries.eu/
 ````
